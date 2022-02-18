@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Guillotinado</title>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>   -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://kit.fontawesome.com/a5713228d6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <a name="inicio"></a>
+    <h1>Guillotinado</h1>
+    <!-- MENU -->
+    <br>
+    <a href="#tablero"><button id="btnInicio">Start / Restart</button></a>
+    <br><br>
+    <input style="width: 24.5rem; height: 2.5rem" type="text" id="nuevaPalabra">
+    <br>
+    <button id="btnAgregar">Agregar Palabra</button>
+    <br><br>
+    <a href="#ayuda"><button>¿Cómo se juega?</button></a>
+    <br><br>
+    <button id="btnSalir">Salir</button>
+
+    <!-- TABLERO -->
+    <a name="tablero"></a>
+    <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">.</div>
+    <canvas id="tablero" width="1200" height="800"></canvas>
+
+    <!-- COMO SE JUEGA -->
+    <a name="ayuda"></a>
+    <h2>¿Cómo se juega?<h2>
+            <div>
+                <p>Tenés que adivinar la palabra escondida presionando las letras del teclado</p>
+                <p>Tenés 5 vidas</li>
+                <p>Tenés 2:30 minutos de tiempo</p>
+                <p>Cada letra que falles, te quitará una vida y le restará 20 segundos al cronómetro</p>
+                <p>Presionando 0 (cero) podés pedir una pista, pero te restará algunos puntos</p>
+                <p>*** Al recargar la página se perderán las palabras que fueron agregadas por el jugador ***</p>
+            </div>
+            <br>
+            <a href="#inicio">Ir al Inicio</a>
+
+    <!-- PIE DE PAGINA -->
+            <section id="lab_social_icon_footer">
+                <div class="container">
+                    <div class="text-center center-block">
+                        <a href="https://www.facebook.com/cmorihuela/"><i id="social-fb"
+                                class="fa fa-facebook-square fa-3x social"></i></a>
+                        <a href="https://github.com/corihuela75"><i id="social-gh"
+                                class="fa-brands fa-github-square fa-3x social"></i></a>
+                        <a href="https://www.linkedin.com/in/cristian-orihuela/"><i id="social-li"
+                                class="fa-brands fa-linkedin fa-3x social"></i></a>
+                        <a href="mailto:#ori@live.com.ar"><i id="social-em"
+                                class="fa fa-envelope-square fa-3x social"></i></a>
+                    </div>
+                </div>
+            </section>
+
+</body>
+
+<script src="js/palabras.js"></script>
+<script src="js/juego.js"></script>
+<script src="js/tablero.js"></script>
+
+<script>
+    //iniciaJuego();
+</script>
+
+</html>
